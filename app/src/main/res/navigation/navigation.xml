@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movieFragment">
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.hw17_maktab67.uilayer.detail.MovieDetailFragment"
+        android:label="MovieDetailFragment">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_movieDetailFragment_to_showVideoFragment"
+            app:destination="@id/showVideoFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_movieDetailFragment" app:destination="@id/movieDetailFragment" />
+    <fragment
+        android:id="@+id/comingSoonFragment"
+        android:name="com.example.hw17_maktab67.uilayer.comingsoon.ComingSoonFragment"
+        android:label="ComingSoonFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.hw17_maktab67.uilayer.search.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/showVideoFragment"
+        android:name="com.example.hw17_maktab67.uilayer.showvideo.ShowVideoFragment"
+        android:label="ShowVideoFragment" />
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.hw17_maktab67.uilayer.movie.MovieFragment"
+        android:label="MovieFragment" />
+</navigation>
