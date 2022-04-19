@@ -2,7 +2,6 @@ package com.example.hw17_maktab67.datalayer.model.moviedetails
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.hw17_maktab67.datalayer.model.moviedetails.*
 
 @Entity(tableName = "movie_detail")
 data class MovieDetailsModel(

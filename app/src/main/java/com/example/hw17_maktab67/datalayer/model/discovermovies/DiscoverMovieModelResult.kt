@@ -3,6 +3,10 @@ package com.example.hw17_maktab67.datalayer.model.discovermovies
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+data class DiscoverMoviesModel(
+    val results: List<DiscoverMovieModelResult>
+)
+
 @Entity(tableName = "discover_movie")
 data class DiscoverMovieModelResult(
     @PrimaryKey

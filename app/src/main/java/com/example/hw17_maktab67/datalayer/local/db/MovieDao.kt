@@ -15,13 +15,13 @@ interface MovieDao {
     suspend fun updateComingSoonList(vararg comingSoonModel: ComingSoonModelResult)
 
     @Query("SELECT * FROM coming_soon")
-    fun getComingSoonList(): Flow<List<ComingSoonModelResult>>
+    suspend fun getComingSoonList(): List<ComingSoonModelResult>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun updateDiscoverMovieList(vararg discoverMovieModelResult: DiscoverMovieModelResult)
 
     @Query("SELECT * FROM discover_movie")
-    fun getDiscoverMovieList(): Flow<List<DiscoverMovieModelResult>>
+    suspend fun getDiscoverMovieList(): List<DiscoverMovieModelResult>
 
     @Query("SELECT * FROM discover_movie WHERE title LIKE '%' || :query || '%' ")
     fun searchMovie(query: String): Flow<List<DiscoverMovieModelResult>>

@@ -3,10 +3,14 @@ package com.example.hw17_maktab67.datalayer.model.commingsoon
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+data class ComingSoonModel(
+    val results: List<ComingSoonModelResult>
+)
+
 @Entity(tableName = "coming_soon")
 data class ComingSoonModelResult(
     @PrimaryKey
-    val id: Int?,
+    val id: Int,
     val adult: Boolean,
     val backdrop_path: String,
     val original_language: String,

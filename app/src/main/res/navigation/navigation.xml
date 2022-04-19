@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/movieDetailFragment"
-        android:name="com.example.hw17_maktab67.uilayer.detail.MovieDetailFragment"
+        android:name="com.example.hw17_maktab67.ui.detail.MovieDetailFragment"
         android:label="MovieDetailFragment">
         <argument
             android:name="id"
@@ -18,18 +18,18 @@
     <action android:id="@+id/action_global_movieDetailFragment" app:destination="@id/movieDetailFragment" />
     <fragment
         android:id="@+id/comingSoonFragment"
-        android:name="com.example.hw17_maktab67.uilayer.comingsoon.ComingSoonFragment"
+        android:name="com.example.hw17_maktab67.ui.comingsoon.ComingSoonFragment"
         android:label="ComingSoonFragment" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.hw17_maktab67.uilayer.search.SearchFragment"
+        android:name="com.example.hw17_maktab67.ui.search.SearchFragment"
         android:label="SearchFragment" />
     <fragment
         android:id="@+id/showVideoFragment"
-        android:name="com.example.hw17_maktab67.uilayer.showvideo.ShowVideoFragment"
+        android:name="com.example.hw17_maktab67.ui.showvideo.ShowVideoFragment"
         android:label="ShowVideoFragment" />
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.example.hw17_maktab67.uilayer.movie.MovieFragment"
+        android:name="com.example.hw17_maktab67.ui.movie.MovieFragment"
         android:label="MovieFragment" />
 </navigation>
